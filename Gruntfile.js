@@ -309,6 +309,7 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
+                        'CNAME',
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.webp',
