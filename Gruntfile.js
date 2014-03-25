@@ -355,7 +355,7 @@ module.exports = function (grunt) {
             pages: {
                 options: {
                     remote: 'git@github.com:fnky/fnky.github.io.git',
-                    branch: 'gh-pages'
+                    branch: 'master'
                 }
             }
         }
