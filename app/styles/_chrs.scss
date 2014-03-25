@@ -1,0 +1,31 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+@font-face {
+  font-family: chrs;
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}chrs-icon.eot'), '#{$icon-font-path}chrs-icon.eot'));
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}chrs-icon.eot?#iefix'), '#{$icon-font-path}chrs-icon.eot?#iefix')) format('embedded-opentype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}chrs-icon.woff'), '#{$icon-font-path}chrs-icon.woff')) format('woff'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}chrs-icon.ttf'), '#{$icon-font-path}chrs-icon.ttf')) format('truetype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}chrs-icon.svg##{$icon-font-svg-id}'), '#{$icon-font-path}chrs-icon.svg##{$icon-font-svg-id}')) format('svg');
+}
+
+// Catchall baseclass
+.chrs-icon {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  font-family: chrs;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
