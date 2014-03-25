@@ -3,7 +3,7 @@ Personal website
 
 This is the source of my personal website.
 
-## Build into `gh-pages` branch
+## Build and push to Github Pages
 
 First configure the `grunt-build-control` options to point to the correct remote repository.
 
