@@ -342,6 +342,22 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        // Build control (moves dist folder to gh-pages)
+        buildcontrol: {
+            options: {
+                dir: 'dist',
+                commit: true,
+                push: true,
+                message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+            },
+            pages: {
+                options: {
+                    remote: 'git@github.com:fnky/fnky.github.io.git',
+                    branch: 'gh-pages'
+                }
+            }
         }
     });
 
@@ -392,6 +408,11 @@ module.exports = function (grunt) {
         'rev',
         'usemin',
         'htmlmin'
+    ]);
+
+    grunt.registerTask('buildpages', [
+        'build',
+        'buildcontrol:pages'
     ]);
 
     grunt.registerTask('default', [
