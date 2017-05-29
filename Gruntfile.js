@@ -8,23 +8,23 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-    // Load grunt tasks automatically
+  // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt)
 
-    // Time how long tasks take. Can help when optimizing build times
+  // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt)
 
-    // Define the configuration for all the tasks
+  // Define the configuration for all the tasks
   grunt.initConfig({
 
-        // Project settings
+    // Project settings
     config: {
-            // Configurable paths
+      // Configurable paths
       app: 'app',
       dist: 'dist'
     },
 
-        // Watches files for changes and runs tasks based on the changed files
+    // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
         files: ['bower.json'],
@@ -64,12 +64,12 @@ module.exports = function (grunt) {
       }
     },
 
-        // The actual grunt server settings
+    // The actual grunt server settings
     connect: {
       options: {
         port: 9000,
         livereload: 35729,
-                // Change this to '0.0.0.0' to access the server from outside
+        // Change this to '0.0.0.0' to access the server from outside
         hostname: '0.0.0.0'
       },
       livereload: {
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
       }
     },
 
-        // Empties folders to start fresh
+    // Empties folders to start fresh
     clean: {
       dist: {
         files: [{
@@ -115,7 +115,7 @@ module.exports = function (grunt) {
       server: '.tmp'
     },
 
-        // Make sure code styles are up to par and there are no obvious mistakes
+    // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -129,7 +129,7 @@ module.exports = function (grunt) {
       ]
     },
 
-        // Mocha testing framework configuration options
+    // Mocha testing framework configuration options
     mocha: {
       all: {
         options: {
@@ -139,7 +139,7 @@ module.exports = function (grunt) {
       }
     },
 
-        // Compiles Sass to CSS and generates necessary files if requested
+    // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
         sassDir: '<%= config.app %>/styles',
@@ -167,7 +167,7 @@ module.exports = function (grunt) {
       }
     },
 
-        // Add vendor prefixed styles
+    // Add vendor prefixed styles
     autoprefixer: {
       options: {
         browsers: ['last 1 version']
@@ -182,7 +182,7 @@ module.exports = function (grunt) {
       }
     },
 
-        // Automatically inject Bower components into the HTML file
+    // Automatically inject Bower components into the HTML file
     bowerInstall: {
       app: {
         src: ['<%= config.app %>/index.html'],
@@ -195,7 +195,7 @@ module.exports = function (grunt) {
       }
     },
 
-        // Renames files for browser caching purposes
+    // Renames files for browser caching purposes
     rev: {
       dist: {
         files: {
@@ -210,9 +210,9 @@ module.exports = function (grunt) {
       }
     },
 
-        // Reads HTML for usemin blocks to enable smart builds that automatically
-        // concat, minify and revision files. Creates configurations in memory so
-        // additional tasks can operate on them
+    // Reads HTML for usemin blocks to enable smart builds that automatically
+    // concat, minify and revision files. Creates configurations in memory so
+    // additional tasks can operate on them
     useminPrepare: {
       options: {
         dest: '<%= config.dist %>'
@@ -229,7 +229,7 @@ module.exports = function (grunt) {
       css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
 
-        // The following *-min tasks produce minified files in the dist folder
+    // The following *-min tasks produce minified files in the dist folder
     imagemin: {
       dist: {
         files: [{
@@ -273,33 +273,33 @@ module.exports = function (grunt) {
       }
     },
 
-        // By default, your `index.html`'s <!-- Usemin block --> will take care of
-        // minification. These next options are pre-configured if you do not wish
-        // to use the Usemin blocks.
-        // cssmin: {
-        //     dist: {
-        //         files: {
-        //             '<%= config.dist %>/styles/main.css': [
-        //                 '.tmp/styles/{,*/}*.css',
-        //                 '<%= config.app %>/styles/{,*/}*.css'
-        //             ]
-        //         }
-        //     }
-        // },
-        // uglify: {
-        //     dist: {
-        //         files: {
-        //             '<%= config.dist %>/scripts/scripts.js': [
-        //                 '<%= config.dist %>/scripts/scripts.js'
-        //             ]
-        //         }
-        //     }
-        // },
-        // concat: {
-        //     dist: {}
-        // },
+    // By default, your `index.html`'s <!-- Usemin block --> will take care of
+    // minification. These next options are pre-configured if you do not wish
+    // to use the Usemin blocks.
+    // cssmin: {
+    //     dist: {
+    //         files: {
+    //             '<%= config.dist %>/styles/main.css': [
+    //                 '.tmp/styles/{,*/}*.css',
+    //                 '<%= config.app %>/styles/{,*/}*.css'
+    //             ]
+    //         }
+    //     }
+    // },
+    // uglify: {
+    //     dist: {
+    //         files: {
+    //             '<%= config.dist %>/scripts/scripts.js': [
+    //                 '<%= config.dist %>/scripts/scripts.js'
+    //             ]
+    //         }
+    //     }
+    // },
+    // concat: {
+    //     dist: {}
+    // },
 
-        // Copies remaining files to places other tasks can use
+    // Copies remaining files to places other tasks can use
     copy: {
       dist: {
         files: [{
@@ -327,7 +327,7 @@ module.exports = function (grunt) {
       }
     },
 
-        // Run some tasks in parallel to speed up build process
+    // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
         'compass:server',
@@ -344,7 +344,7 @@ module.exports = function (grunt) {
       ]
     },
 
-        // Build control (moves dist folder to gh-pages)
+    // Build control (moves dist folder to gh-pages)
     buildcontrol: {
       options: {
         dir: 'dist',
