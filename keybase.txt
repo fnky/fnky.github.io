@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/cbp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cbp.io
+  * I am cbp (https://keybase.io/cbp) on keybase.
+  * I have a public key ASAoy43ZvKjh6P7JlU6DtqF-aWhwh5Ywcrzh4Fx_M77H3Ao
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ee40daecbf41f9320f72f1a56c5592669a672f0ad0a4ebfe9c62d32d552d4ee40a",
+            "host": "keybase.io",
+            "kid": "012028cb8dd9bca8e1e8fec9954e83b6a17e69687087963072bce1e05c7f33bec7dc0a",
+            "uid": "33caf1e6e7fd36ee2205a8945ecec819",
+            "username": "cbp"
+        },
+        "service": {
+            "hostname": "cbp.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.7"
+    },
+    "ctime": 1452010205,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1452010085,
+        "hash": "a0147437aad85bc97e5f43ff3a6f257507f66a75519ae5debfab4208018f86508f2a373bcf0caf25409fd79180a21d8c48bf3f6ef9fcb78edb14932ac9d75fd0",
+        "seqno": 343304
+    },
+    "prev": "11078924da4cfaf029000f88255be5be4af54f3bb795b889cc45ab6a18e987d6",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKMuN2byo4ej+yZVOg7ahfmlocIeWMHK84eBcfzO+x9wKp3BheWxvYWTFAud7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZWU0MGRhZWNiZjQxZjkzMjBmNzJmMWE1NmM1NTkyNjY5YTY3MmYwYWQwYTRlYmZlOWM2MmQzMmQ1NTJkNGVlNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjhjYjhkZDliY2E4ZTFlOGZlYzk5NTRlODNiNmExN2U2OTY4NzA4Nzk2MzA3MmJjZTFlMDVjN2YzM2JlYzdkYzBhIiwidWlkIjoiMzNjYWYxZTZlN2ZkMzZlZTIyMDVhODk0NWVjZWM4MTkiLCJ1c2VybmFtZSI6ImNicCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY2JwLmlvIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC43In0sImN0aW1lIjoxNDUyMDEwMjA1LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NTIwMTAwODUsImhhc2giOiJhMDE0NzQzN2FhZDg1YmM5N2U1ZjQzZmYzYTZmMjU3NTA3ZjY2YTc1NTE5YWU1ZGViZmFiNDIwODAxOGY4NjUwOGYyYTM3M2JjZjBjYWYyNTQwOWZkNzkxODBhMjFkOGM0OGJmM2Y2ZWY5ZmNiNzhlZGIxNDkzMmFjOWQ3NWZkMCIsInNlcW5vIjozNDMzMDR9LCJwcmV2IjoiMTEwNzg5MjRkYTRjZmFmMDI5MDAwZjg4MjU1YmU1YmU0YWY1NGYzYmI3OTViODg5Y2M0NWFiNmExOGU5ODdkNiIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQJ1HKvfe/uvuKdAZJcdXDTOaG0NwDtvT+dxjIZ/CGMAk+OocdrkZXuhR2VmDSFLXkAKMHNb7kQFiMUd/fHInSwuoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cbp
+
+==================================================================
